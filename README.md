@@ -17,24 +17,18 @@ Examples of data visualization:
 
 ## Multi-layer Perceptron Classifier:
 
+### less is better:
+
 * hidden_layer_sizes=(11,11,11,11,11)
 * learning_rate_init = 0.05
 
+AUC = 0.73+-0.12 (k-fold k=5)
 
-```
-               precision   recall  f1-score  support
+* hidden_layer_sizes=(10,10,10)
+* learning_rate_init = 0.05
 
-        0.0       0.81      0.82      0.82    677831
-        1.0       0.79      0.77      0.78    572169
+AUC: 0.792+-0.002 (k-fold k=5)
 
-avg / total       0.80      0.80      0.80   1250000
-
-```
-k-fold:
-
-````
-AUC = 0.73+-0.12
-````
 
 ## Authors
 
